@@ -42,8 +42,6 @@ Transforma cavalos em companions estratégicos com habilidades únicas. Integra�
 /horse skill dash  → Usar habilidade Impeto
 /horse admin       → Comandos admin (OP)
 
-
-
 ---
 ## 📄 Licença
 Este plugin é um software proprietário. É proibida a redistribuição, cópia, modificação ou uso sem autorização explícita do autor. A licença é concedida individualmente por servidor.
