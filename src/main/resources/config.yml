@@ -1,0 +1,50 @@
+# ═══════════════════════════════════════════════════════════════
+# NemonicHorse — config.yml
+# ═══════════════════════════════════════════════════════════════
+
+horse:
+  max-level: 20
+  xp-per-block: 0.5
+  xp-per-kill: 10.0
+  xp-per-damage-taken: 2.0
+  xp-per-elixir: 100.0
+  mmocore-xp-on-levelup: 50.0
+
+  stats:
+    base-health: 15.0
+    health-per-level: 1.25
+    base-speed: 0.225
+    speed-per-level: 0.004
+    max-speed: 0.45        # cap de velocidade (vanilla max: ~0.3375); LEGENDARY lvl20 sem cap = 0.61
+    base-jump: 0.70
+    jump-per-level: 0.02
+    max-jump: 1.5
+
+  naming:
+    max-length: 24
+    auto-name-on-null: true
+    blocked-words:
+      - "admin"
+      - "moderador"
+
+  # rarity.breeding-*-chance foram substituídos por tabela de probabilidades fixa em HorseRarity.java
+  # Estes valores são ignorados pelo plugin — mantidos apenas para não quebrar configs antigas.
+
+database:
+  file: "horses.db"
+  save-interval-minutes: 5
+
+messages:
+  prefix: "&6[&e✦ Cavalaria&6] &r"
+  not-riding: "&c[Cavalaria] Monte em seu cavalo primeiro."
+  not-owner: "&c[Cavalaria] Voce nao e o dono deste cavalo."
+  not-registered: "&c[Cavalaria] Este cavalo nao esta registrado."
+  no-skill: "&c[Cavalaria] Nenhuma habilidade equipada. Use /horse skill."
+  level-up: "&6&l✦ LEVEL UP! &e{name} &6chegou ao nivel &e{level}&6!"
+  skill-cooldown: "&c[Cavalaria] {skill} em recarga! &8({remaining}s)"
+  mana-low: "&c[Cavalaria] Mana insuficiente! &8({cost} necessario)"
+  naming-prompt: "&7Digite o nome no chat. &8(max {max} caracteres) | Digite CANCELAR para abortar."
+  naming-success: "&a[Cavalaria] Seu cavalo agora se chama: &e{name}"
+  naming-too-long: "&c[Cavalaria] Nome muito longo! Maximo {max} caracteres."
+  naming-cancelled: "&7[Cavalaria] Nomeacao cancelada."
+  skill-equipped: "&a[Cavalaria] Habilidade &f{skill} &aequipada!"

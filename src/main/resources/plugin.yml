@@ -1,0 +1,38 @@
+name: NemonicHorse
+version: '${project.version}'
+main: com.nemonichorse.NemonicHorse
+api-version: '1.21'
+authors: [ NemonicRP ]
+description: Sistema profissional de cavalaria para NemonicRP
+load: STARTUP
+
+soft-depend:
+  - MMOCore
+  - ItemsAdder
+
+commands:
+  horse:
+    description: Comando principal de cavalaria
+    permission: nemonicorp.horse.use
+    aliases: [ cavalo, hors ]
+    usage: /horse [info|skill|admin]
+
+permissions:
+  nemonicorp.horse.use:
+    description: Usar o sistema de cavalaria
+    default: true
+  nemonicorp.horse.admin:
+    description: Comandos administrativos de cavalaria
+    default: op
+  nemonicorp.horse.skill.dash:
+    description: Usar habilidade Impeto
+    default: true
+  nemonicorp.horse.skill.jump:
+    description: Usar habilidade Salto Heroico
+    default: true
+  nemonicorp.horse.skill.ironhide:
+    description: Usar habilidade Casco de Ferro
+    default: true
+  nemonicorp.horse.skill.trample:
+    description: Usar habilidade Esmagar
+    default: true
